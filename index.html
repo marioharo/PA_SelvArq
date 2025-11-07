@@ -12,43 +12,58 @@
     <script src="https://kit.fontawesome.com/7d9d5d8456.js" crossorigin="anonymous"></script>
     <!-- Css -->
      <link rel="stylesheet" href="assets/css/style.css">
-    <title>SelVarq - Arquitectos</title>
+    <!-- JS -->
+     <script src="assets/js/script.js"></script>
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <title>SELV Arquitectos</title>
 </head>
 <body>
     <!-- Header -->
     <div class="container">
         <header>
             <div class="col">
-                <img src="assets/img/logo-selvarq.jpg" alt="" width="100px">
+                <a href="index.html">
+                    <img src="assets/img/logo-selvarq.jpg" alt="" width="100px">
+                </a>
             </div>
             <div class="col">
                 <div class="row">
-                        <i class="fa-solid fa-square-phone fa-2x icon-gray"></i>
+                        <i class="fa-solid fa-square-phone fa-2x color-icon-gray"></i>
                         <h3>Soporte al cliente y ventas</h3>
-                        <p class="txt-head">646-325-0357</p>
+                        <p class="txt-head"><a href="tel:6463250357" target="_blank">646-325-0357</a></p>
                 </div>
             </div>
             <div class="col">
                 <div class="row">
-                        <i class="fa-regular fa-clock fa-2x icon-gray"></i>
+                        <i class="fa-regular fa-clock fa-2x color-icon-gray"></i>
                         <h3>Horarios de trabajo</h3>
                         <p class="txt-head">Lun - Vier: 08:00 - 18:00</p>
                 </div>
             </div>
+            <div class="col">
+                <div class="row space-evenly">
+                      <a class="social-icons" href="www.facebook.com" target="_blank" title="siguenos en Facebook"><i class="fa-brands fa-facebook fa-2x color-icon-green"></i></a>
+                      <a class="social-icons" href="www.youtube.com" target="_blank" title="siguenos en Youtube"><i class="fa-brands fa-youtube fa-2x color-icon-green"></i></a>
+                      <a class="social-icons" href="www.instagram.com" target="_blank" title="siguenos en Instagram"><i class="fa-brands fa-instagram fa-2x color-icon-green"></i></a>
+                  </div>
+            </div>
         </header>
     </div>
     <!-- nav-bar -->
-     <nav class="navbar">
-        <a href="#" class="navbar-link">Inicio</a>
-        <a href="#" class="navbar-link">Servicios</a>
-        <a href="#" class="navbar-link">Portafolio</a>
-        <a href="#" class="navbar-link">Nosotros</a>
-        <a href="#" class="navbar-link">Noticias</a>
-        <a href="#" class="navbar-link">Contacto</a>
+     <nav class="navbar row space-evenly">
+        <a href="index.html" class="navbar-link nav-link-active">Inicio</a>
+        <a href="assets/pages/servicios.html" class="navbar-link">Servicios</a>
+        <a href="assets/pages/portafolio.html" class="navbar-link">Portafolio</a>
+        <a href="assets/pages/nosotros.html" class="navbar-link">Nosotros</a>
+        <a href="assets/pages/noticias.html" class="navbar-link">Noticias</a>
+        <a href="assets/pages/contacto.html" class="navbar-link">Contacto</a>
      </nav>
     <!-- Banner principal -->
     <div class="banner">
-        <img src="assets/img/banner-principal.jpg" alt="" width="100%">
+        <video autoplay muted loop class="video-fluid">
+            <source src="assets/video/video-hero.mp4" type="video/mp4">
+        </video>
     </div>
     <!-- section team -->
     <div class="container">
@@ -59,20 +74,20 @@
             </div>
             <div class="col-20">
                 <button>
-                    <a href="#">obtener presupuesto</a>
+                    <a href="assets/pages/contacto.html">obtener presupuesto</a>
                 </button>
                 
             </div>
         </div>
     </div>
-    <section id="team">
+    <section id="team" class="row space-evenly">
             <div class="card-team">
                 <img src="assets/img/team1.jpg" alt="" width="350px">
                 <div class="card-team-text">
                     <h3 class="pv10">Acerca de SelvArq</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed a vero, iusto dolore sint deleniti aut, fugiat accusantium, corrupti dicta! Aliquid laudantium consequatur nemo, debitis excepturi doloremque quasi commodi.
                         <br>
-                        <span class="icon-orange"><a href="#">LEER MAS </a><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="color-icon-orange"><a href="#">LEER MAS </a><i class="fa-solid fa-arrow-right"></i></span>
                     </p>
                 </div>
             </div>
@@ -83,7 +98,7 @@
                     <h3 class="pv10">Perfil de Empresa</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sed a vero, iusto dolore sint deleniti aut, fugiat accusantium, corrupti dicta! Aliquid laudantium consequatur nemo, debitis excepturi doloremque quasi commodi.
                         <br>
-                        <span class="icon-orange"><a href="#">LEER MAS </a><i class="fa-solid fa-arrow-right"></i></span>
+                        <span class="color-icon-orange"><a href="#">LEER MAS </a><i class="fa-solid fa-arrow-right"></i></span>
                     </p>
                 </div>
             </div>
@@ -142,28 +157,28 @@
         </div>
     </section>
     <div class="pv20"></div>
-    <!-- stadistics -->
+    <!-- section stadistics -->
     <section id="stadistics">
         <div class="container pv50">
             <div class="row">
                 <div class="col">
-                    <i class="fa-solid fa-building icon-orange fa-3x"></i>
-                    <H2>346</H2>
+                    <i class="fa-solid fa-building color-icon-orange fa-3x"></i>
+                    <h2>346</h2>
                     <P>PROYECTOS</P>
                 </div>
                 <div class="col">
-                    <i class="fa-solid fa-people-group icon-orange fa-3x"></i>
+                    <i class="fa-solid fa-people-group color-icon-orange fa-3x"></i>
                     <h2>932</h2>
                     <p>CLIENTES FELICES</p>
                 </div>
                 <div class="col">
-                    <i class="fa-solid fa-graduation-cap icon-orange fa-3x"></i>
+                    <i class="fa-solid fa-graduation-cap color-icon-orange fa-3x"></i>
                     <h2>932
                     </h2>
                     <p>CALIFICADOS</p>
                 </div>
                 <div class="col">
-                    <i class="fa-solid fa-truck icon-orange fa-3x"></i>
+                    <i class="fa-solid fa-truck color-icon-orange fa-3x"></i>
                     <H2>432</H2>
                     <P>MAQUINARIAS</P>
                 </div>
@@ -214,16 +229,30 @@
         </div>
     </section>
     <div class="container">
-        <button><a href="#">COTICE con nosotros</a></button>
+        <button><a href="assets/pages/servicios.html">COTICE con nosotros</a></button>
     </div>
     <div class="pv20"></div>
+    <!-- section trabajos realizados -->
+     <section id="trabajos-realizados">
+        <div class="container pv40">
+            <h2>Trabajos realizados</h2>
+            <div class="row gap20">
+                <div class="col">
+                    <iframe class="video-fluid" height="315" src="https://www.youtube.com/embed/o-Xmcn2WMAI?si=X-FGNracwreJTNdS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col">
+                    <iframe class="video-fluid" height="315" src="https://www.youtube.com/embed/xgeaUQeoWDM?si=GHhh-pvokG8aZd9V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+     </section>
     <!-- section testimonios -->
     <section id="testimony">
         <div class="container">
             <h2>Nuestros Testimonios</h2>
-            <div class="testimony-cards">
-                <div class="testimony-cards-item p30">
-                    <i class="fa-solid fa-quote-left icon-gray fa-2x"></i>
+            <div class="row space-around">
+                <div class="testimony-card p30">
+                    <i class="fa-solid fa-quote-left color-icon-gray fa-2x"></i>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut consectetur dolor neque dolore cupiditate, aperiam suscipit, explicabo obcaecati, quidem sequi sunt minima fugit voluptatem incidunt reprehenderit quos ex. Culpa.
                    <div class="row">
                     <div class="col-20">
@@ -234,8 +263,8 @@
                     </div>
                    </div>
                 </div>
-                <div class="testimony-cards-item p30">
-                    <i class="fa-solid fa-quote-left icon-gray fa-2x"></i>
+                <div class="testimony-card p30">
+                    <i class="fa-solid fa-quote-left color-icon-gray fa-2x"></i>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ut consectetur dolor neque dolore cupiditate, aperiam suscipit, explicabo obcaecati, quidem sequi sunt minima fugit voluptatem incidunt reprehenderit quos ex. Culpa.
                    <div class="row">
                     <div class="col-20">
@@ -249,7 +278,7 @@
             </div>
         </div>
     </section>
-    <!-- clientes -->
+    <!-- section clientes -->
     <div class="container pv20">
         <h2>nuestros clientes</h2>
     </div>
@@ -299,10 +328,10 @@
         <div class="footer-sec">
             <h4>CONTACTO</h4>
             <P>You can always contact with us via email or phone. Get in touch with contact and get a quote form.</P>
-            <P><i class="fa-solid fa-location-dot icon-orange"></i> 1901 Avenue of the Stars Suite 200 Washington, CA 90067</P>
-            <p><i class="fa-solid fa-square-phone icon-orange"></i> 646-325-0357</p>
-            <p><i class="fa-solid fa-envelope icon-orange"></i> chicago@construction.com</p>
-            <p><i class="fa-solid fa-fax icon-orange"></i> FAX: (123) 123-4567</p>
+            <P><i class="fa-solid fa-location-dot color-icon-orange"></i> 1901 Avenue of the Stars Suite 200 Washington, CA 90067</P>
+            <p><i class="fa-solid fa-square-phone color-icon-orange"></i> 646-325-0357</p>
+            <p><i class="fa-solid fa-envelope color-icon-orange"></i> chicago@construction.com</p>
+            <p><i class="fa-solid fa-fax color-icon-orange"></i> FAX: (123) 123-4567</p>
         </div>
         <div class="footer-sec">
             <h4>COMPAÑIA</h4>
@@ -313,5 +342,9 @@
             <p><i class="fa-regular fa-circle-xmark"></i> Domingo: Cerrado</p>
         </div>
      </footer>
+     <!-- Boton scroll to top -->
+     <a href="#" id="scroll-up-btn">
+        <i class="fa-solid fa-angle-up fa-2x color-icon-white"></i>
+       </a>
 </body>
 </html>
