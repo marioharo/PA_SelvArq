@@ -85,7 +85,14 @@ button {
   max-width: 85%;
   margin: 0 auto;
 }
+/* menu hamburguesa */
+.menu-toggle{
+  display: none; /* oculta el boton */
+  font-size: 2rem;
+}
 .navbar {
+  display: flex;
+  flex-direction: row;
   background-color: var(--bgcolor3);
   padding: 20px;
   position: sticky;
@@ -102,6 +109,11 @@ button {
 }
 .nav-link-active {
   color: var(--colorfont4);
+}
+.title-pre-team{
+  display: flex;
+  flex-direction: row;
+  padding: 40px 0;
 }
 #team {
   background-color: var(--bgcolor2);
@@ -133,10 +145,12 @@ button {
 }
 #stadistics {
   background-color: var(--bgcolor2);
+  text-align: center;
 }
 .section-services {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
   gap: 20px;
 }
 .service-card {
@@ -288,7 +302,7 @@ footer {
   -o-transition: all 0.4s ease-in-out;
 }
 .form-submit:hover{
-  background-color: var(--color3);
+  background-color: var(--bgcolor3);
 }
 /** Flexbox **/
 .row {
@@ -422,6 +436,21 @@ footer {
   background-attachment: fixed;
   padding: 30px;
 }
+.icon-social-contact{
+  background-color:var(--bgcolor3);
+  display: block;
+  padding: 20px 0;
+  text-align: center;
+  border: 1px solid white; 
+  transition: all 0.3s ease; 
+}
+.icon-social-contact:hover{
+  background-color: transparent;
+  border: 1px solid var(--colorfont4);
+}
+.icon-social-contact:hover i{
+  color:var(--colorfont4)
+}
 /* Activar grid container */
 .grid-service{
   display: grid;
@@ -483,4 +512,146 @@ footer {
 }
 .table-fees caption{
   caption-side: bottom;
+}
+
+/* Responsive XL - 1200px*/
+@media screen and (max-width:1200px) {
+  .padding-xl{
+      padding: 70px 0;
+  }
+  .txt-head{
+    font-size: var(--fs4);
+  }
+  .quienes-section{
+    flex-direction: column;
+  }
+}
+/* Responsive MD - 992px */
+@media screen and (max-width:992px) {
+  .txt-head{
+    font-size: var(--fs2);
+  }
+  .section-services{
+    gap:1px
+  }
+  .testimony-card{
+    margin-bottom: 20px;
+  }
+}
+/* Responsive SM - 768px */
+@media screen and (max-width:768px) {
+  .menu-toggle{
+      display:initial;
+  }
+  .navbar{
+    flex-direction: column;
+    width: 33%;
+    background-color: var(--bgcolor3);
+    text-align: center;
+    /* posicionar menu */
+    position:absolute;
+    top: 160px;
+    left: 0;
+    /* ocultar menu */
+    display: none;
+    z-index: 1000;
+  }
+  .navbar.show{
+      display: flex;
+  }
+  .navbar-link{
+      color: var(--bgcolor2);
+      padding: 0.8rem 0;
+  }
+  .container{
+      max-width: 90%;
+  } 
+  .videos-promocionales .col{
+      flex-basis: 100%;
+      max-width: 100%;
+      margin-bottom: 30px;
+  }
+  .padding-xl{
+      padding: 45px 0;
+  }
+  .grid-service{
+      grid-template-columns: repeat(2, 1fr);
+  }
+  h3{
+    font-size: var(--fs1);
+  }
+  .form-contact .col{
+      flex-basis: 100%;
+      max-width: 100%;
+      margin: 10px 0;
+  }
+  #trabajos-realizados .row{
+    flex-direction: column;
+  }
+  #quienes{
+    flex-direction: column;
+  }
+  .quienes-section{
+    flex-direction: column;
+  }
+
+}
+/* Responsive XSM - 576px */
+@media screen and (max-width:576px) {
+  .container{
+      max-width: 95%;
+  }
+  h1, h2, h3, h5{
+      text-align: center;
+  }
+  h2{
+    font-size: var(--fs6);
+  }
+  h3{
+    font-size: var(--fs2);
+  }
+  header .fa-clock, header .fa-square-phone{
+    display: none;
+  }
+  header h3{
+    padding: 0;
+    text-align: left;
+  }
+  .txt-head{
+    font-size: var(--fs1);
+    color: var(--colorfont3);
+    padding: 0;
+  }
+  #stadistics i{
+    font-size: 2rem;
+  }
+  #stadistics p{
+    font-size: var(--fs1);
+  }
+  .title-pre-team{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  body{
+      font-size: 0.9rem;
+  }
+  .card-team{
+    margin-bottom: 1rem;
+  }
+  #service .col{
+      flex-basis: 100%;
+      max-width: 100%;
+      padding-bottom: 20px;
+  }
+  .grid-service{
+      grid-template-columns: repeat(1, 1fr);
+  }
+  #valores .col{
+      flex-basis: 100%;
+      max-width: 100%;
+  }
+  footer{
+      justify-content: space-around;
+  }
 }
